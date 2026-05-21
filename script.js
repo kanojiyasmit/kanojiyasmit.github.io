@@ -211,15 +211,12 @@ const counterObserver = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const els = entry.target.querySelectorAll('.stat-num');
+        const els = entry.target.querySelectorAll('.stat-num[data-count]');
         els.forEach(el => {
-          const raw = el.textContent.trim();
-          const match = raw.match(/([\d.]+)(.*)/);
-          if (match) {
-            const num = parseFloat(match[1]);
-            const suffix = match[2];
-            animateCounter(el, num, suffix);
-          }
+          const num = parseFloat(el.dataset.count);
+          const suffix = el.dataset.suffix || '';
+          el.textContent = '0' + suffix;
+          animateCounter(el, num, suffix);
         });
         counterObserver.unobserve(entry.target);
       }
