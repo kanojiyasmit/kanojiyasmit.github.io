@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smit Kanojiya — iOS Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">SK</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Smit Kanojiya</h1>
+      <div class="hero-title">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        iOS Developer with <strong>4 years</strong> building production-grade networking,
+        device management, and surveillance apps used by thousands of users worldwide.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Work</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-cv-row">
+        <a href="resume.pdf" download="Smit_Kanojiya_Resume.pdf" class="btn-cv-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:kanojiya23smit@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/kanojiyasmit/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/smitkanojiya" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        </a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">About</span>
+        <h2>Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm an iOS Developer based in <strong>Ahmedabad, India</strong>, specializing in
+            building high-performance applications for <strong>networking devices, IoT systems,
+            and video surveillance</strong>. Currently a Sr. iOS Developer at VVDN Technologies,
+            where I ship production apps used by thousands of users globally.
+          </p>
+          <p>
+            My work spans <strong>Swift &amp; SwiftUI</strong> for native iOS to <strong>Flutter</strong>
+            for cross-platform solutions — from WiFi router management apps to enterprise-grade
+            IP camera managers running on iOS, Android, and Windows.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Major Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100+</span>
+              <span class="stat-label">Cameras Managed</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-tags reveal">
+          <div class="tag-cloud">
+            <span class="tag">Swift</span>
+            <span class="tag">SwiftUI</span>
+            <span class="tag">Flutter</span>
+            <span class="tag">Dart</span>
+            <span class="tag">UIKit</span>
+            <span class="tag">Combine</span>
+            <span class="tag">ONVIF</span>
+            <span class="tag">RTSP</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">MVVM</span>
+            <span class="tag">BLoC</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">TestFlight</span>
+            <span class="tag">IoT</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Experience</span>
+        <h2>Where I've Worked</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Sr. iOS Developer</h3>
+                <p class="timeline-company">VVDN Technologies</p>
+              </div>
+              <span class="timeline-date">June 2022 — Present</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Developed production-grade iOS apps for networking &amp; connected devices — WiFi routers, 5G FWA devices, mobile-based device management</li>
+              <li>Apps used by <strong>thousands of users</strong> in real-world networking and surveillance environments</li>
+              <li>Built high-performance UI using <strong>Swift, SwiftUI, Combine, and GCD</strong> for real-time device interaction</li>
+              <li>Integrated RESTful APIs for WiFi config, signal monitoring, and device dashboards</li>
+              <li>Debugged production issues using <strong>Optimizely, Glassbox</strong> — improved stability and reduced customer-reported issues</li>
+              <li>Managed end-to-end releases via <strong>TestFlight and App Store Connect</strong></li>
+              <li>Contributed to video surveillance systems using <strong>ONVIF, RTSP streaming</strong></li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Swift</span><span>SwiftUI</span><span>Flutter</span><span>Combine</span><span>REST APIs</span><span>ONVIF</span><span>RTSP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Projects</span>
+        <h2>What I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-links">
+            </div>
+          </div>
+          <h3>NETGEAR Nighthawk &amp; Orbi</h3>
+          <p class="project-sub">WiFi Router &amp; Mesh Management Apps</p>
+          <p class="project-desc">
+            Production iOS apps for managing NETGEAR's flagship WiFi routers and mesh systems.
+            Redesigned onboarding UI flows based on real user session analysis, delivering
+            an <strong>18% reduction in support tickets</strong>.
+          </p>
+          <ul class="project-highlights">
+            <li>Resolved customer-reported issues using Optimizely, Glassbox &amp; Airship</li>
+            <li>Collaborated with backend, QA &amp; support in weekly release cycles</li>
+            <li>Critical production bug fixes improving app stability</li>
+          </ul>
+          <div class="project-tech">
+            <span>Swift</span><span>SwiftUI</span><span>REST APIs</span><span>Optimizely</span><span>Glassbox</span><span>TestFlight</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-links">
+            </div>
+          </div>
+          <h3>Inseego Mobile App</h3>
+          <p class="project-sub">5G FWA Device Installation &amp; Management</p>
+          <p class="project-desc">
+            iOS application for installing and managing Inseego's 5G FWA routers and mobile hotspots.
+            Redesigned onboarding with secure QR/IMEI-based device pairing, reducing setup time by <strong>25%</strong>.
+          </p>
+          <ul class="project-highlights">
+            <li>QR/IMEI-based device pairing for secure onboarding</li>
+            <li>Signal strength visualization &amp; Wi-Fi control dashboard</li>
+            <li>Responsive UI integrated with REST APIs</li>
+          </ul>
+          <div class="project-tech">
+            <span>Swift</span><span>UIKit</span><span>REST APIs</span><span>Auto Layout</span><span>GCD</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-links">
+            </div>
+          </div>
+          <h3>ConnectAlarm</h3>
+          <p class="project-sub">Johnson Controls — Video Surveillance System</p>
+          <p class="project-desc">
+            Cross-platform VMS in Flutter to manage multi-vendor IP cameras via industry-standard
+            ONVIF protocols, with low-latency RTSP live streaming and WS-Discovery.
+          </p>
+          <ul class="project-highlights">
+            <li>ONVIF Profiles S, T, G — video config, PTZ control, edge recording</li>
+            <li>Snapshot capture, motion alerts, historical playback with timeline scrubbing</li>
+            <li>Digest/WS-Security auth &amp; optimized video buffer management</li>
+          </ul>
+          <div class="project-tech">
+            <span>Flutter</span><span>Dart</span><span>ONVIF</span><span>RTSP</span><span>WS-Discovery</span><span>PTZ</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-links">
+            </div>
+          </div>
+          <h3>Illustra Camera Manager</h3>
+          <p class="project-sub">IP Camera Management — Mobile &amp; Desktop</p>
+          <p class="project-desc">
+            Cross-platform IP Camera Management tool in Flutter across Android, iOS, and Windows —
+            enabling security teams to discover, configure, and maintain <strong>100+ IP cameras</strong>
+            from a single unified codebase.
+          </p>
+          <ul class="project-highlights">
+            <li>REST API primary + automatic ONVIF fallback for broad camera compatibility</li>
+            <li>Bulk commissioning wizard — credentials, static IP/DHCP, H.264/H.265 profiles</li>
+            <li>Manual bulk OTA firmware upgrades with cloud detection &amp; batch processing</li>
+            <li>100% compatibility across supported iOS devices</li>
+          </ul>
+          <div class="project-tech">
+            <span>Flutter</span><span>Dart</span><span>iOS</span><span>Android</span><span>Windows</span><span>ONVIF</span><span>H.264/H.265</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Skills</span>
+        <h2>What I Work With</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3><span class="skill-icon">💻</span> Languages</h3>
+          <div class="skill-tags">
+            <span>Swift</span><span>Dart</span><span>Objective-C</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3><span class="skill-icon">🧩</span> Frameworks</h3>
+          <div class="skill-tags">
+            <span>UIKit</span><span>SwiftUI</span><span>Combine</span><span>Core Data</span>
+            <span>Cocoa Touch</span><span>XCTest</span><span>Firebase</span><span>Flutter</span>
+            <span>Push Notifications</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3><span class="skill-icon">🛠️</span> Tools</h3>
+          <div class="skill-tags">
+            <span>Xcode</span><span>Android Studio</span><span>Git</span><span>SourceTree</span>
+            <span>TestFlight</span><span>App Store Connect</span><span>SPM</span><span>Instruments</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3><span class="skill-icon">🏗️</span> Architecture</h3>
+          <div class="skill-tags">
+            <span>MVVM</span><span>MVC</span><span>BLoC</span><span>Redux</span><span>Dependency Injection</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3><span class="skill-icon">📡</span> Domain Expertise</h3>
+          <div class="skill-tags">
+            <span>Networking Apps</span><span>Device Management</span><span>IoT Systems</span>
+            <span>ONVIF</span><span>RTSP</span><span>Video Surveillance</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3><span class="skill-icon">⚙️</span> Other</h3>
+          <div class="skill-tags">
+            <span>ARC / Memory Mgmt</span><span>Auto Layout</span><span>Unit Testing</span>
+            <span>UI Testing</span><span>CI/CD</span><span>Agile</span><span>Accessibility (a11y)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Education</span>
+        <h2>Where I Studied</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-content">
+            <h3>B.Tech — Information Technology</h3>
+            <p class="edu-school">Sal College of Engineering</p>
+            <span class="edu-date">Aug 2019 – June 2022</span>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">📘</div>
+          <div class="edu-content">
+            <h3>Diploma — Information Technology</h3>
+            <p class="edu-school">Government Polytechnic Ahmedabad</p>
+            <span class="edu-date">Aug 2016 – June 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Contact</span>
+        <h2>Let's Build Something</h2>
+      </div>
+      <div class="contact-wrapper reveal">
+        <p class="contact-desc">
+          Open to exciting iOS/Flutter opportunities and collaboration.
+          Drop a message — I usually respond within 24 hours.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:kanojiya23smit@gmail.com" class="contact-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">kanojiya23smit@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/kanojiyasmit/" target="_blank" rel="noopener" class="contact-card">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">kanojiyasmit</span>
+            </div>
+          </a>
+          <a href="https://github.com/smitkanojiya" target="_blank" rel="noopener" class="contact-card">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">smitkanojiya</span>
+            </div>
+          </a>
+          <a href="tel:+919724271925" class="contact-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            <div>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 97242 71925</span>
+            </div>
+          </a>
+          <a href="resume.pdf" download="Smit_Kanojiya_Resume.pdf" class="contact-card contact-cv">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <div>
+              <span class="contact-label">Resume</span>
+              <span class="contact-value">Download CV</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built by Smit Kanojiya · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
